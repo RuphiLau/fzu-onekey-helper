@@ -6,18 +6,18 @@ session_start();
 error_reporting(0);
 require("modules.php");
 
-$func = @$_GET['f'];
+$func = $_GET['f'];
 switch($func) {
-	case "saveUserInfo":
-		saveUserInfo();
-		break;
-	case "fetchList":
-		fetchList();
-		break;
-	case "getImage":
-		getImage();
-		break;
-	case "doProcess":
-		doProcess();
-		break;
+    case "saveUserInfo":
+        saveUserInfo();
+        break;
+    case "fetchList":
+        fetchList();
+        break;
+    case "getImage":
+        getImage();
+        break;
+    case "doProcess":
+        doProcess();
+        break;
 }
